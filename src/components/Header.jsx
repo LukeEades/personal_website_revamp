@@ -16,7 +16,6 @@ const Header = () => {
       <nav className={"page-nav" + (menuOpened ? "" : " page-nav-hidden")}>
         <NavOption text="About" path="" />
         <NavOption text="Projects" path="projects" />
-        <NavOption text="Blog" path="blog" />
         <NavOption text="Contact" path="contact" />
         <Lightbulb />
       </nav>
