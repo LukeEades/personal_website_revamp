@@ -1,15 +1,17 @@
-main {
-  gap: 1rem;
-}
-section:nth-child(even) > div {
+#about section:nth-child(even) > div {
   border: 2px solid var(--color-secondary);
   border-radius: 1rem;
 }
-section > div {
+#about {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#about section > div {
   padding: 1rem;
   max-width: 64rem;
 }
-section {
+#about > section {
   display: flex;
   justify-content: center;
 }
@@ -51,7 +53,7 @@ p {
   font-size: min(calc(1rem + 0.5vw), 1.5rem);
 }
 @media (width < 64rem) {
-  section:nth-child(even) > div {
+  #about section:nth-child(even) > div {
     border-left: none;
     border-right: none;
     border-radius: 0rem;

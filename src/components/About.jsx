@@ -1,7 +1,7 @@
 import "../stylesheets/about.css"
 const About = () => {
   return (
-    <>
+    <div id="about">
       <section id="intro-section">
         <div>
           <h1>Hi, I'm Luke</h1>
@@ -35,7 +35,7 @@ const About = () => {
           </ul>
         </div>
       </section>
-    </>
+    </div>
   )
 }
 

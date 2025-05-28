@@ -1,7 +1,6 @@
 @import url("./theme.css");
-#contact-section {
-  display: flex;
-  flex-direction: column;
+#contact {
+  margin-top: 1rem;
 }
 #contact-section {
   display: flex;

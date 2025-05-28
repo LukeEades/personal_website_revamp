@@ -1,7 +1,7 @@
 import "../stylesheets/contact.css"
 const Contact = () => {
   return (
-    <>
+    <div id="contact">
       <section id="contact-section">
         <div>
           <h1>Contact</h1>
@@ -14,7 +14,7 @@ const Contact = () => {
           </p>
         </div>
       </section>
-    </>
+    </div>
   )
 }
 
