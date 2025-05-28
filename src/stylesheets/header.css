@@ -1,0 +1,105 @@
+@import url("./theme.css");
+header {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-primary);
+  border-bottom: 2px solid var(--color-secondary);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
+  font-size: 1.25rem;
+}
+.page-nav {
+  width: 100%;
+}
+.page-nav > * {
+  color: var(--color-secondary);
+}
+.page-nav > button {
+  background-color: transparent;
+  border: none;
+}
+.menu-button {
+  --width: 24px;
+  --height: 4px;
+  --anim-len: 200ms;
+}
+.menu-button:hover {
+  cursor: pointer;
+}
+.menu-button > span {
+  --cross-offset: 0;
+  --cross-angle: 0;
+  width: var(--width);
+  height: var(--height);
+  background-color: var(--color-secondary);
+  border-radius: 0.25rem;
+  transition-property: translate, rotate, scale;
+  transition-duration: calc(var(--anim-len) / 2), calc(var(--anim-len) / 2),
+    var(--anim-len);
+  transition-delay: calc(var(--anim-len) / 2), 0ms, 0ms;
+}
+.menu-button.menu-open > span {
+  translate: 0 var(--cross-offset);
+  rotate: z var(--cross-angle);
+  transition-delay: 0ms, calc(var(--anim-len) / 2), 0ms;
+}
+.menu-button.menu-open > span:nth-child(1) {
+  --cross-offset: calc(var(--width) / 2 - var(--height) / 2);
+  --cross-angle: 45deg;
+}
+.menu-button.menu-open > span:nth-child(2) {
+  scale: 0;
+}
+.menu-button.menu-open > span:nth-child(3) {
+  --cross-offset: calc(-1 * (var(--width) / 2) + var(--height) / 2);
+  --cross-angle: -45deg;
+}
+.icon {
+  max-width: 1.5rem;
+  max-height: 1.5rem;
+}
+.icon:hover {
+  cursor: pointer;
+}
+:root.light header .icon {
+  fill: orange;
+}
+:root.dark header .icon {
+  fill: white;
+}
+.icon * {
+  fill: inherit !important;
+}
+.menu-button {
+  display: none;
+}
+.page-nav {
+  max-width: 45em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@media (max-width: 26.5em) {
+  header {
+    flex-direction: column;
+    align-items: end;
+    gap: 0.5rem;
+  }
+  .menu-button {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    background-color: transparent;
+    gap: calc((var(--width) - var(--height) * 3) / 2);
+  }
+  .page-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.25rem;
+  }
+  .page-nav-hidden {
+    display: none;
+  }
+}

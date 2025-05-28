@@ -1,0 +1,62 @@
+main {
+  gap: 1rem;
+}
+section:nth-child(even) > div {
+  border: 2px solid var(--color-secondary);
+  border-radius: 1rem;
+}
+section > div {
+  padding: 1rem;
+  max-width: 64rem;
+}
+section {
+  display: flex;
+  justify-content: center;
+}
+#intro-section {
+  margin: 2rem 0rem;
+}
+#intro-section > div {
+  width: 100%;
+}
+#skills-section > div {
+  width: 100%;
+}
+#skills-section > div > ul {
+  column-count: 2;
+  line-height: 1.5rem;
+  font-size: min(calc(1rem + 0.5vw), 1.5rem);
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 0.25rem;
+}
+#skills-section li {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 2px solid var(--color-secondary);
+}
+#skills-section li:hover {
+  color: var(--color-highlight);
+  cursor: default;
+}
+h1 {
+  font-size: min(calc(2rem + 0.5vw), 3rem);
+}
+h2 {
+  font-size: min(calc(1.25rem + 0.5vw), 2rem);
+}
+p {
+  font-size: min(calc(1rem + 0.5vw), 1.5rem);
+}
+@media (width < 64rem) {
+  section:nth-child(even) > div {
+    border-left: none;
+    border-right: none;
+    border-radius: 0rem;
+  }
+  #intro-section > div {
+    width: fit-content;
+  }
+}

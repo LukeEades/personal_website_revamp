@@ -1,0 +1,10 @@
+@import url("./theme.css");
+#contact-section {
+  display: flex;
+  flex-direction: column;
+}
+#contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
