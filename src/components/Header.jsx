@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Link, useHref } from "react-router"
+import { Link, useMatch } from "react-router"
 import "../stylesheets/header.css"
 import useTheme from "../hooks/useTheme"
 import LightbulbOn from "../assets/lightbulb-on.svg?react"
@@ -47,9 +47,9 @@ const HamburgerMenu = ({ openMenu, menuOpened }) => {
   )
 }
 const NavOption = ({ path, text }) => {
-  const currentPath = useHref()
+  const nav = useMatch(path)
   const addHighlight = target => {
-    if (`/${target}` === currentPath) {
+    if (`/${target}` === nav?.pathname) {
       return " highlight"
     }
     return ""
