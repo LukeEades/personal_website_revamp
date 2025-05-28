@@ -5,5 +5,4 @@ import svgr from "vite-plugin-svgr"
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [svgr(), react()],
-  base: "personal_website_revamp",
 })
