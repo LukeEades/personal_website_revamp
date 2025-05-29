@@ -11,6 +11,11 @@ const Contact = () => {
               lukegeades@gmail.com
             </a>{" "}
             if for some reason you need to.
+            <br />
+            You can also check out my{" "}
+            <a href="https://github.com/lukeeades" className="highlight">
+              github
+            </a>
           </p>
         </div>
       </section>
