@@ -6,6 +6,11 @@ const projects = [
       "An exploration into all the different algorithms that are used for generating mazes",
     url: "https://lukeeades.github.io/maze_generation",
   },
+  {
+    name: "Pomodoro Timer",
+    description: "A very simple and minimal pomodoro timer",
+    url: "https://lukeeades.github.io/pomodoro_timer",
+  },
 ]
 const Projects = () => {
   return (
