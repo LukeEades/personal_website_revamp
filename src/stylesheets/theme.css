@@ -4,6 +4,7 @@
   --color-grey: #716b76;
   --color-tertiary: #4d9aff;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 :root.light {
   --color-primary: white;
