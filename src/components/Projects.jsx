@@ -11,6 +11,11 @@ const projects = [
     description: "A very simple and minimal pomodoro timer",
     url: "https://lukeeades.github.io/pomodoro_timer",
   },
+  {
+    name: "Personal Website",
+    description: "Built with React, and love, I suppose",
+    url: "https://luke-eades.org",
+  },
 ]
 const Projects = () => {
   return (
