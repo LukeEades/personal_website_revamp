@@ -16,6 +16,11 @@ const projects = [
     description: "Built with React, and love, I suppose",
     url: "https://luke-eades.org",
   },
+  {
+    name: "Reddit Client",
+    description: "Small, minimal reddit client to view and refresh subreddits",
+    url: "https://lukeeades.github.io/reddit_lanes",
+  },
 ]
 const Projects = () => {
   return (
