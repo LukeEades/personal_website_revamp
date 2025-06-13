@@ -39,6 +39,7 @@ const HamburgerMenu = ({ openMenu, menuOpened }) => {
     <button
       onClick={openMenu}
       className={"menu-button" + (menuOpened ? " menu-open" : "")}
+      aria-label="menu-button"
     >
       <span></span>
       <span></span>
