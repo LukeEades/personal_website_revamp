@@ -27,9 +27,11 @@ const About = () => {
           <h2>Skills</h2>
           <p>Tech I enjoy using:</p>
           <ul>
-            <li>Javascript/Node.js</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
             <li>React</li>
-            <li>C</li>
+            <li>Node.js</li>
             <li>Golang</li>
             <li>PostgreSQL</li>
           </ul>
