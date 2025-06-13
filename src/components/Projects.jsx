@@ -21,6 +21,11 @@ const projects = [
     description: "Small, minimal reddit client to view and refresh subreddits",
     url: "https://lukeeades.github.io/reddit_lanes",
   },
+  {
+    name: "Weather App",
+    description: "A weather app, how original",
+    url: "https://lukeeades.github.io/weather_app",
+  },
 ]
 const Projects = () => {
   return (
